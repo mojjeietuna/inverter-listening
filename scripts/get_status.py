@@ -6,7 +6,14 @@ import asyncio
 import sys
 from goodwe import connect
 
-INVERTER_IP = '192.168.1.180'
+import json
+from pathlib import Path
+
+# Load config
+config_path = Path(__file__).parent.parent / "config.json"
+with open(config_path) as f:
+    config = json.load(f)
+INVERTER_IP = config.get("host")
 
 async def get_solar_data():
     """Connect to the inverter and fetch the customized data."""

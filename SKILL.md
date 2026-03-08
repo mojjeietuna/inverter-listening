@@ -24,9 +24,9 @@ pip install goodwe
 
 ## Core Script
 
-The primary tool is `scripts/get_status.py`. It connects to a hardcoded IP address for the inverter and prints the formatted status.
+The script reads the inverter's IP address from `config.json`. You must edit this file with the correct IP before first use.
 
-**Inverter IP Address:** `192.168.1.180`
+**Inverter IP Address:** Configured in `config.json`
 
 ### Usage
 
