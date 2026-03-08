@@ -24,9 +24,7 @@ pip install goodwe
 
 ## Core Script
 
-The script reads the inverter's IP address from `config.json`. You must edit this file with the correct IP before first use.
-
-**Inverter IP Address:** Configured in `config.json`
+The script automatically discovers the inverter on the local network via UDP broadcast (port 48899). No configuration or hardcoded IP is required.
 
 ### Usage
 
